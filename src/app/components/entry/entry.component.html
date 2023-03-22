@@ -1,0 +1,21 @@
+<div class="row mt-5">
+  <div class="col-lg-6 offset-lg-3">
+    <h2 class="text-center fontTitle">Ingresa Presupuesto</h2>
+    <div class="card">
+      <div class="card-body">
+        <div *ngIf="quiantityWrong" class="text-center mb-3">
+          <span class="badge bg-danger fs-4">CANTIDAD NO VALIDA</span>
+        </div>
+        <input
+          [(ngModel)]="quantity"
+          type="number"
+          class="form-control text-center"
+          placeholder="Ingresa tu presupeusto"
+        />
+        <button (click)="add()" class="btn btn-secondary btn-block mt-2">
+          Aceptar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
